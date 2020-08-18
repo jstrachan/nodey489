@@ -1,0 +1,139 @@
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-mp8wd[0m
+{"level":"info","ts":1597726631.0403192,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597726631.0407557,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-8dvth[0m
+{"level":"info","ts":1597726631.7049687,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1597726631.7080166,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey489-master-relea-ng5dg-5q4pn[0m
+{"level":"info","ts":1597727252.9284525,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597727254.3892865,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey489.git @ v1.0.1 in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9657191929373e75edb236b803385309271d87c5
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.1 No repository field.
+npm WARN REPLACE_ME@1.0.1 No license field.
+
+up to date in 0.638s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.1 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0033] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0034] Built cross stage deps: map[]                
+[36mINFO[0m[0034] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0036] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0037] cmd: EXPOSE                                  
+[36mINFO[0m[0037] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0037] Checking for cached layer 10.97.239.29/myproject/cache:24c861e848a00d7b7c1b38c9e3cce5d64cf90e25c974d79da366859f0d1eaf4e... 
+[36mINFO[0m[0191] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0191] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0242] Taking snapshot of full filesystem...        
+[36mINFO[0m[0242] Resolving paths                              
+[36mINFO[0m[0243] ENV PORT 8080                                
+[36mINFO[0m[0243] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0243] EXPOSE 8080                                  
+[36mINFO[0m[0243] cmd: EXPOSE                                  
+[36mINFO[0m[0243] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0243] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0243] WORKDIR /usr/src/app                         
+[36mINFO[0m[0243] cmd: workdir                                 
+[36mINFO[0m[0243] Changed working directory to /usr/src/app    
+[36mINFO[0m[0243] Creating directory /usr/src/app              
+[36mINFO[0m[0243] Resolving paths                              
+[36mINFO[0m[0243] Taking snapshot of files...                  
+[36mINFO[0m[0243] COPY . .                                     
+[36mINFO[0m[0243] Resolving paths                              
+[36mINFO[0m[0243] Taking snapshot of files...                  
+[36mINFO[0m[0243] Pushing layer 10.97.239.29/myproject/cache:24c861e848a00d7b7c1b38c9e3cce5d64cf90e25c974d79da366859f0d1eaf4e to cache now 
+[36mINFO[0m[0243] CMD ["npm", "start"]                         
+[36mINFO[0m[0243] No files changed in this command, skipping snapshotting. 
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/nodey489 to an unshallow repository
+Generating change log from git ref 940f9c00cc4bf91a67b9074f90a2aef7d6819a71 => e59e416693f5891ce62812a7f64e1c4f49c5c18c
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 71d7237356ed40dabe6ed5d0aab53c17628ff4c1 with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Finding issues in commit messages using git format
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 5b3508f20989aa1b11f922dccd3a92ad0a51a60e with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+Associating user x-0 in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login -0 as emails match
+Adding label jenkins.io/git-github-userid=-0 to user x-0 in users.jenkins.io
+WARNING: Failed to enrich commit 5b3508f20989aa1b11f922dccd3a92ad0a51a60e with issues: User.jenkins.io "x-0" is invalid: metadata.labels: Invalid value: "-0": a valid label must be an empty string or consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyValue',  or 'my_value',  or '12345', regex used for validation is '(([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9])?')
+WARNING: No release found for *********/nodey489 and tag v1.0.1 so creating a new release
+Updated the release information at https://github.com/*********/nodey489/releases/tag/v1.0.1
+generated: /workspace/source/charts/nodey489/templates/release.yaml
+Created Release nodey489-1-0-1 resource in namespace **
+Updating PipelineActivity *********-nodey489-master-1 with version 1.0.1
+Updated PipelineActivities *********-nodey489-master-1 with release notes URL: https://github.com/*********/nodey489/releases/tag/v1.0.1
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+Uploading chart file nodey489-1.0.1.tgz to http://bucketrepo/bucketrepo/charts/api/charts
+Received 200 response: 
+
+Showing logs for build [32mjstrachan-nodey489-master-relea-ng5dg-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+defaulting to the version 1.0.1 from $VERSION
+loading version stream URL https://github.com/jenkins-x/**r-versions.git ref master
+running command: git config --global credential.helper store
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+Promoting app nodey489 version 1.0.1 to namespace **-staging
+running command: git clone https://github.com/*********/**3-demo-minikube.git **-promote-141228827
+Cloning into '**-promote-141228827'...
+cloned https://github.com/*********/**3-demo-minikube.git to /tmp/**-promote-141228827
+created Pull Request https://github.com/*********/**3-demo-minikube/pull/4 from dir /tmp/**-promote-141228827
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+Rebasing PullRequest due to conflict
+running command: git clone https://github.com/*********/**3-demo-minikube.git **-promote-244858885
+Cloning into '**-promote-244858885'...
+cloned https://github.com/*********/**3-demo-minikube.git to /tmp/**-promote-244858885
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+The build for the Pull Request last commit is currently in progress.
+Pull Request https://github.com/*********/**3-demo-minikube/pull/4 is merged at sha 7077a11f71f6820025fe91f1df5f1f0913f456d0
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names nodey489, **-nodey489, **-staging-nodey489
