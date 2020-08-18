@@ -1,0 +1,126 @@
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-bw7zs[0m
+{"level":"info","ts":1597728345.8809717,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597728345.8821063,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-m9n7g[0m
+{"level":"info","ts":1597728346.9779143,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1597728346.9787219,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jstrachan-nodey489-pr-1-pr-buil-4z6pv-8nrbr[0m
+{"level":"info","ts":1597728353.048955,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1597728354.4089575,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*********/nodey489.git @ master in path /workspace/source"}
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9657191929373e75edb236b803385309271d87c5,1:a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e: 9657191929373e75edb236b803385309271d87c5:
+DEBUG: ran git fetch --unshallow origin a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e: 9657191929373e75edb236b803385309271d87c5: in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 9657191929373e75edb236b803385309271d87c5
+DEBUG: ran git reset --hard 9657191929373e75edb236b803385309271d87c5 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e
+DEBUG: ran git merge a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 9657191929373e75edb236b803385309271d87c5..HEAD
+Merged SHA a83cf512f16f3f648b2ff3c1bc7ef1318de3be6e with commit message 'Update index.html' into base branch master
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN REPLACE_ME@1.0.0 No repository field.
+npm WARN REPLACE_ME@1.0.0 No license field.
+
+up to date in 0.485s
+found 0 vulnerabilities
+
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> REPLACE_ME@1.0.0 test /workspace/source
+> echo "no test specified" && exit 0
+
+no test specified
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0030] Resolved base name node:9-slim to node:9-slim 
+[36mINFO[0m[0030] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0032] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0034] Built cross stage deps: map[]                
+[36mINFO[0m[0034] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0035] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0036] cmd: EXPOSE                                  
+[36mINFO[0m[0036] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0036] Checking for cached layer 10.97.239.29/myproject/cache:0de7c98a1e0c20f3f5d0607b4a9117a1e6095b1c51a6e11ae1385d6b6ed07871... 
+[36mINFO[0m[0190] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0190] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0233] Taking snapshot of full filesystem...        
+[36mINFO[0m[0233] Resolving paths                              
+[36mINFO[0m[0234] ENV PORT 8080                                
+[36mINFO[0m[0235] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0235] EXPOSE 8080                                  
+[36mINFO[0m[0235] cmd: EXPOSE                                  
+[36mINFO[0m[0235] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0235] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0235] WORKDIR /usr/src/app                         
+[36mINFO[0m[0235] cmd: workdir                                 
+[36mINFO[0m[0235] Changed working directory to /usr/src/app    
+[36mINFO[0m[0235] Creating directory /usr/src/app              
+[36mINFO[0m[0235] Resolving paths                              
+[36mINFO[0m[0235] Taking snapshot of files...                  
+[36mINFO[0m[0235] COPY . .                                     
+[36mINFO[0m[0235] Resolving paths                              
+[36mINFO[0m[0235] Taking snapshot of files...                  
+[36mINFO[0m[0235] CMD ["npm", "start"]                         
+[36mINFO[0m[0235] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0235] Pushing layer 10.97.239.29/myproject/cache:0de7c98a1e0c20f3f5d0607b4a9117a1e6095b1c51a6e11ae1385d6b6ed07871 to cache now 
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-1-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: 10.97.239.29\/myproject\/nodey489|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-1-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-1-1" >> requirements.yaml
+** step helm build
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: bucketrepo http://bucketrepo/bucketrepo/charts/
+Successfully added Helm repository bucketrepo.
+
+Showing logs for build [32mjstrachan-nodey489-pr-1-pr-buil-4z6pv-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Found commit author match for: ********* with email address: james.strachan@gmail.com
+Created environment *********-nodey489-pr-1
+Namespace **-*********-nodey489-pr-1 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 192.168.64.4.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: 10.97.239.29/myproject/nodey489
+    tag: 0.0.0-SNAPSHOT-PR-1-1
+adding helm values file /workspace/source/charts/preview/**-values.yaml for namespace **-*********-nodey489-pr-1
+Cloning the Jenkins X versions repo https://github.com/jenkins-x/**r-versions.git with ref refs/heads/master to /tmp/896322231/jenkins-x-versions
+about to run: git fetch --tags in dir /tmp/896322231/jenkins-x-versions
+about to run: git describe master --abbrev=0 --contains in dir /tmp/896322231/jenkins-x-versions
+v0.0.391~1
+Updating PipelineActivities *********-nodey489-pr-1-1 which has status Running
+WARNING: preview application http://nodey489-**-*********-nodey489-pr-1.192.168.64.4.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.179084676s
+WARNING: preview application http://nodey489-**-*********-nodey489-pr-1.192.168.64.4.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.291307125s
+WARNING: preview application http://nodey489-**-*********-nodey489-pr-1.192.168.64.4.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.78450705s
+Preview application is now available at: http://nodey489-**-*********-nodey489-pr-1.192.168.64.4.nip.io
